@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +9,11 @@
 
 body {
     background-color: #f7dcdc;
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
 }
 
 footer {
@@ -20,4 +28,75 @@ a {
 
 ul {
     list-style: none;
+}
+
+nav {
+    max-width: 1120;
+    margin: auto;
+    padding: 1.5rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Cinzel;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #FFF2E780;
+}
+
+.github {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal {
+    background-color:mistyrose;
+}
+
+.hero {
+    max-width: 1120px;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+hr {
+    border-color:brown
+}
+
+.hero-subtitulo {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
 }
