@@ -36,9 +36,15 @@ nav {
     padding: 1.5rem 10rem;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 1.5rem 10 rem;
+    position: relative;
+}
+
+.logo-conteiner {
+    margin-bottom: 1.5rem; /* Adiciona espaço entre a logo e o menu */
 }
 
 .logo {
@@ -54,11 +60,6 @@ nav {
     flex-direction: row;
     gap: 1.5rem;
     color: #FFF2E780;
-}
-
-.github {
-    color: #ff0000;
-    font-weight: 600;
 }
 
 main {
