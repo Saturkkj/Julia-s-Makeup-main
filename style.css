@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-    background-color: #f7dcdc;
+    background-color: #ecd5d5;
 }
 
 html {
@@ -31,27 +32,27 @@ ul {
 }
 
 nav {
-    max-width: 1120;
+    max-width: 1120px;
     margin: auto;
-    padding: 1.5rem 10rem;
+    padding: 0.5rem 10rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem 10 rem;
     position: relative;
 }
 
 .logo-conteiner {
-    margin-bottom: 1.5rem; /* Adiciona espaço entre a logo e o menu */
+    margin-bottom: 0.5rem; /* Adiciona espaço entre a logo e o menu */
 }
 
 .logo {
     font-family: Cinzel;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
+    color:#DF4C83
     
 }
 
@@ -68,7 +69,7 @@ main {
 }
 
 .principal {
-    background-color:mistyrose;
+    background-color:#f8dfdf
 }
 
 .hero {
@@ -78,6 +79,12 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 6rem;
+
+    padding: 1.5rem 2rem;
+    margin: auto;
+
+    overflow: clip;
 }
 
 .hero-conteudo {
@@ -88,7 +95,7 @@ main {
 
 h1 {
     font-family: Montserrat;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
@@ -99,5 +106,15 @@ hr {
 .hero-subtitulo {
     font-family: Inter;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+.hero-imagem {
+    max-width: 45%;
+
+}
+
+.hero-imagem > figure > img {
+    width: 75%;
+    border-radius: 0.5rem;
 }
