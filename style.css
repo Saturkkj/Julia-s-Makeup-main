@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #ecd5d5;
+    background-color: #ffe3fc;
 }
 
 html {
@@ -26,40 +26,76 @@ html {
 
 a {
     text-decoration: none;
-    color: #5f0eac;
+    color: #000000;
 }
 
-.a-logo {
-    color:#DF4C83;
+/* Estilo para o topo do cabeçalho */
+.header-top {
+    display: flex;
+    justify-content: center;
+    background-color: #f5b7e0; /* Cor de fundo rosa vibrante */
+    align-items: center;
+    color: #050505;
+    padding: 15px 15px;
 }
 
-ul {
-    list-style: none;
+.header-info {
+    margin-right: 800px;
 }
 
+
+.header-info span {
+    margin-right: 20px;
+}
+
+.header-social a {
+    margin-left: 10px;
+}
+
+.header-social img {
+    width: 24px;  /* Ajuste o tamanho conforme necessário */
+    height: auto;  /* Mantém a proporção da imagem */
+    margin-left: 10px;  /* Espaçamento entre os logos */
+}
+
+.header-social img:hover {
+    color: #e70000;
+}
+
+/* Estilo para o logo e o menu */
 nav {
-    max-width: 1120px;
-    margin: auto;
-    padding: 1.5rem 10rem;
-
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
 }
 
-.logo-conteiner {
-    margin-bottom: 0.5rem; /* Adiciona espaço entre a logo e o menu */
-}
-
-.logo {
+nav .logo span {
     font-family: Cinzel;
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
-    color:#DF4C83
-    
+    color:#000000;
+    text-align: center;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul.menu li a:hover {
+    color: #e48ec7; /* Efeito hover combinando com o topo */
 }
 
 .menu {
@@ -79,25 +115,49 @@ main {
 }
 
 .hero {
-    max-width: 1120px;
-    height: 60vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6rem;
-
-    padding: 0rem 2rem;
-    margin: auto;
-
-    overflow: clip;
+    position: relative;
+    max-width: 100%; /* Ajuste conforme necessário */
+    height: 60vh; /* Altura do carrossel */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda a área do contêiner */
 }
 
-.hero-conteudo {
+.hero-background {
+    position: relative; /* Para que os elementos dentro possam ser posicionados */
+    height: 100%; /* Altura total do contêiner */
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+}
+
+.hero-images {
+    display: flex; /* Usando flexbox para alinhar horizontalmente */
+    width: 100%; /* Largura total do contêiner */
+    filter: brightness(0.5);
+}
+
+.hero-image {
+    flex: auto; /* Cada imagem ocupa a mesma largura */
+    height: 100%; /* Altura total do contêiner */
+    background-size: cover; /* Cobre todo o espaço do div */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.hero-text {
+    position: absolute; /* Para que o texto fique acima das imagens */
+    top: 60%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição */
+    color: white; /* Cor do texto */
+    font-size: 2rem; /* Tamanho do texto */
+    text-align: center; /* Centraliza o texto */
+    z-index: 1; /* Garante que o texto fique acima do background */
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
 }
 
 .destaque-rosa {
@@ -111,18 +171,20 @@ main {
 
 h1 {
     font-family: Montserrat;
-    font-size: 2.3rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 hr {
+    margin-top: 10px;
     border-color:#5f0eac
 }
 
 .hero-subtitulo {
     font-family: Intel;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 20px;
 }
 
 .hero-imagens-conteiner {
